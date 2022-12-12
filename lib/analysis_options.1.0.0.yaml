@@ -2,8 +2,8 @@ include: all.yaml
 
 analyzer:
   strong-mode:
-    implicit-casts: false
-    implicit-dynamic: false
+    # implicit-casts: false
+    # implicit-dynamic: false
   errors:
     missing_required_param: error
     missing_return: error
@@ -20,136 +20,7 @@ dart_code_metrics:
     - "**/*"
   rules:
     - no-cross-package-exports
-    - no-native-buttons
-    - no-native-icons
-    - no-native-input-elements
-    - buttons-layout
-    - koyal-scaffold
-    - koyal-text-span
-    - koyal-text:
-        exclude: 
-        - test/**
-    - no-direct-colors
-    - no-hcicolors
-    - no-direct-padding
-    - api-imports-in-infrastructure-only:
-        exclude:
-        - lib/src/domain/prepare_otp/otp_prepare_response.dart
-        - lib/src/domain/mapper/rel_contract_repayment_data_mapper.dart
-        - lib/src/domain/mapper/contract_repayment_data_mapper.dart
-        - lib/src/domain/mapper/cel_contract_repayment_data_mapper.dart
-        - lib/src/domain/legal_consent/legal_consent_dtos.dart
-        - lib/src/domain/documents/mapper.dart
-        - lib/src/domain/documents/documents_dtos.dart
-        - lib/src/domain/card_contract/failures/api_response_failure.dart
-        - lib/src/domain/game/i_game_repository.dart
-        - lib/src/domain/contact_us/contact_us_repository.dart
-        - lib/src/core/api/fake/fake_loan_applications_api.dart
-        - lib/src/application/add_update_bank_details/add_update_bank_details_bloc.dart
-        - lib/src/application/ifsc/search_data/bank_ifsc_search_result_bloc.dart
-        - lib/src/infrastructure/ddm_details/loan_application.dart
-        - lib/src/domain/add_update_bank_details/model/e_signature_reponse_model.dart
-        - lib/src/domain/ifsc/i_bank_ifsc_result_repository.dart
-        - lib/src/presentation/add_update_bank_details/widget/blank_or_prefilled_bank_details.dart
-        - lib/src/presentation/ifsc/bank_ifsc_search_result_screen.dart
-        - lib/src/presentation/ifsc/search_ifsc_code_screen.dart
-        - lib/src/domain/in_documents_mapper.dart
-        - lib/src/domain/pos_appointment/model/pos.dart
-        - lib/src/domain/profile/email/value_objects.dart
-        - lib/src/domain/ckyc/ckyc_data_mapper.dart
-        - lib/src/presentation/reward_with_box/widgets/collect_mystery_box_header.dart
-        - lib/src/domain/tracking/event_data_mapper.dart
-        - lib/src/application/authorization_v2/recover_password/recover_password_identifier/recover_password_identifier_bloc.dart
-        - lib/src/application/authorization_v2/recover_password/recover_password_bloc.dart
-        - lib/src/application/authorization_v2/sign_up/sign_up_otp_bloc/sign_up_otp_bloc.dart
-        - lib/src/application/authorization_v2/sign_up/sign_up_email_bloc/sign_up_email_bloc.dart
-        - lib/src/application/authorization_v2/sign_up/sign_up_phone_bloc/sign_up_phone_bloc.dart
-        - lib/src/application/authorization_v2/sign_up/sign_up_bloc.dart
-        - lib/src/application/authorization_v2/sign_up/sign_up_identifier_bloc/sign_up_identifier_bloc.dart
-        - lib/src/presentation/authorization_v2/page/recover_password/recover_password_identifier_page.dart
-        - lib/src/presentation/authorization_v2/page/sign_up/sign_up_identifier_page.dart
-        - lib/src/application/eload/payment_summary/eloads_payment_summary_bloc.dart
-        - lib/src/application/eload/select_service_provider/eload_select_service_provider_bloc.dart
-        - lib/src/application/eload/amount_recipient/amount_recipient_bloc.dart
-        - lib/src/application/eload/choose_payment/eload_choose_payment_bloc.dart
-        - lib/src/domain/eload/i_id_eloads_repository.dart
-        - lib/src/domain/eload/routes/eload_payment_summary_args.dart
-        - lib/src/domain/eload/routes/eload_amount_recipient_route_args.dart
-        - lib/src/presentation/eload/payment_summary/eloads_payment_summary_screen.dart
-        - lib/src/presentation/eload/transaction_success/eloads_transaction_success_screen.dart
-        - lib/src/presentation/eload/select_service_provider/eload_select_service_provider_screen.dart
-        - lib/src/presentation/eload/amount_recipient/mobile/telco_prepaid_body.dart
-        - lib/src/presentation/eload/amount_recipient/mobile/pulsa_postpaid_body.dart
-        - lib/src/presentation/eload/amount_recipient/utility/utility_pdam_body.dart
-        - lib/src/presentation/eload/amount_recipient/utility/utility_bpjs_body.dart
-        - lib/src/presentation/eload/amount_recipient/utility/utility_pln_body.dart
-        - lib/src/presentation/eload/choose_payment/eload_choose_payment_screen.dart
-        - lib/src/domain/reset_password/reset_password_session_response.dart
-        - lib/src/domain/unblock_account/unblock_account_session_response.dart
-        - lib/src/domain/auth/model/sign_up_error_type.dart
-        - lib/src/domain/auth/model/sign_on_state.dart
-        - lib/src/domain/auth/i_identity_repository.dart
-        - lib/src/domain/change_phone/start_change_phone_number_session_response.dart
-        - lib/src/domain/change_phone/change_phone_number_otp_verification_response.dart
-        - lib/src/domain/change_phone/change_phone_number_result_type.dart
-        - lib/src/application/app_loading_failed/app_loading_failed_bloc.dart
-        - lib/src/domain/mm_products_change_type.dart
-        - lib/src/domain/qr/i_vn_qr_repository.dart
-        - lib/src/application/eloads/payment_summary/eloads_payment_summary_bloc.dart
-        - lib/src/application/eloads/transaction_details/eload_transaction_details_bloc.dart
-        - lib/src/application/eloads/choose_payment/eload_choose_payment_bloc.dart
-        - lib/src/application/qr/payment_summary/payment_summary_bloc.dart
-        - lib/src/application/qr/cash_payment/cash_payment_bloc.dart
-        - lib/src/application/qr/transaction_details/qr_transaction_details_bloc.dart
-        - lib/src/application/qr/payment_amount/payment_amount_bloc.dart
-        - lib/src/application/qr/scanner/qr_scanner_bloc.dart
-        - lib/src/application/qr/payment_option/payment_option_bloc.dart
-        - lib/src/application/ebills/search_biller/ebills_search_biller_bloc.dart
-        - lib/src/application/ebills/payment_summary/ebills_payment_summary_bloc.dart
-        - lib/src/application/ebills/filter_biller/ebills_filter_biller_bloc.dart
-        - lib/src/application/ebills/transaction_details/ebill_transaction_details_bloc.dart
-        - lib/src/application/ebills/billing_information/ebills_billing_information_bloc.dart
-        - lib/src/application/ebills/select_category/ebills_select_category_bloc.dart
-        - lib/src/application/ebills/service_provider/ebills_service_provider_bloc.dart
-        - lib/src/application/ebills/payment_option/ebills_payment_option_bloc.dart
-        - lib/src/domain/eload/i_ph_eloads_repository.dart
-        - lib/src/domain/eload/routes/eloads_payment_summary_args.dart
-        - lib/src/domain/joined_transaction/i_ph_transaction_details_repository.dart
-        - lib/src/domain/qr/model/qr_discount_model.dart
-        - lib/src/domain/qr/model/aub_response_model.dart
-        - lib/src/domain/qr/routes/qr_payment_summary_route_args.dart
-        - lib/src/domain/qr/i_ph_qr_repository.dart
-        - lib/src/domain/ebill/routes/ebills_filter_biller_route_args.dart
-        - lib/src/domain/ebill/routes/ebills_search_biller_route_args.dart
-        - lib/src/domain/ebill/routes/ebills_payment_option_route_args.dart
-        - lib/src/domain/ebill/routes/ebills_service_provider_route_args.dart
-        - lib/src/domain/ebill/routes/ebills_billing_information_route_args.dart
-        - lib/src/domain/ebill/routes/ebills_payment_verification_args.dart
-        - lib/src/domain/ebill/routes/ebills_payment_summary_route_args.dart
-        - lib/src/domain/ebill/i_ph_ebills_repositoy.dart
-        - lib/src/presentation/eloads/payment_summary/eloads_payment_summary_utils.dart
-        - lib/src/presentation/eloads/payment_summary/eloads_payment_summary_screen.dart
-        - lib/src/presentation/eloads/transaction_success/eloads_transaction_success_screen.dart
-        - lib/src/presentation/eloads/choose_payment/eload_choose_payment_screen.dart
-        - lib/src/presentation/qr/payment_summary/qr_payment_summary_screen.dart
-        - lib/src/presentation/qr/transaction_success/qr_transaction_success_screen.dart
-        - lib/src/presentation/qr/payment_option/payment_option_screen.dart
-        - lib/src/presentation/ebills/payment_summary/ebills_payment_summary_screen.dart
-        - lib/src/presentation/ebills/transaction_success/ebills_transaction_success_screen.dart
-        - lib/src/presentation/ebills/transaction_error/ebill_transaction_error_handler.dart
-        - lib/src/presentation/ebills/select_category/ebills_select_category_screen.dart
-        - lib/src/presentation/ebills/payment_option/ebills_payment_option_screen.dart
-        - lib/src/domain/authorizations/authorization_direction.dart
-        - lib/src/domain/authorizations/authorization_status.dart
-        - lib/src/domain/loan_detail/installment_plan_status.dart
-        - lib/src/domain/transaction_history/transaction_state.dart
-        - lib/src/domain/transaction_history/transaction_type.dart
-        - lib/src/domain/enumerations/type_enumeration.dart
-        - lib/src/domain/deals/sku_availability.dart
-        - lib/src/domain/environment_config/mapper/config_root_mapper.dart
-        - lib/src/domain/orders/order_check_list_item_type.dart
-        - lib/src/presentation/ebills/bill_information/ebills_billing_information_screen.dart
-
+    
 linter:
   rules:
     always_use_package_imports: false
