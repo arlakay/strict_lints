@@ -1,0 +1,24 @@
+name: strict_lints
+description: Package containing all linter rules which are used for BANK MAS Flutter codebase
+version: 0.0.1
+publish_to: none
+
+environment:
+  sdk: ">=2.17.6 <3.0.0"
+  flutter: ">=1.17.0"
+
+dependencies:
+  flutter:
+    sdk: flutter
+  # dart_code_metrics: 
+  #   git: 
+  #     url: https://github.com/dart-code-checker/dart-code-metrics.git
+  #     ref: 0e0f098802e656339d13c2ab46fc9d3f241c5b43
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+
+flutter:
+
+
