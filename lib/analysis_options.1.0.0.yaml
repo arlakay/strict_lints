@@ -24,7 +24,10 @@ dart_code_metrics:
     
 linter:
   rules:
-    always_use_package_imports: false
+    use_setters_to_change_properties: false
+    cascade_invocations: false
+    library_private_types_in_public_api: false
+    prefer_relative_imports: false
     avoid_relative_lib_imports: false
     close_sinks: false
     comment_references: false
