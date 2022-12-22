@@ -14,13 +14,12 @@ analyzer:
   exclude:
     - "**/*.g.dart"
     - "**/*.freezed.dart"
-    - test/**
 
-dart_code_metrics:
-  metrics-exclude:
-    - "**/*"
-  rules:
-    - no-cross-package-exports
+# dart_code_metrics:
+#   metrics-exclude:
+#     - "**/*"
+#   rules:
+#     - no-cross-package-exports
     
 linter:
   rules:
